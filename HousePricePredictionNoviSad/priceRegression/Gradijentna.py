@@ -16,18 +16,18 @@ from sklearn.tree import  plot_tree
 pd.pandas.set_option('display.max_rows', None)
 
 if __name__ == '__main__':
-    data = pd.read_csv('my_last_data.csv')
-    z =data.drop('Price(EUR)', axis=1)
-    X = data.drop('Price(EUR)', axis=1).values
-    y = data['Price(EUR)'].values
+    data = pd.read_csv('../diplomski/data/numeric_data_with_state.csv')
+    z =data.drop('price', axis=1)
+    X = data.drop('price', axis=1).values
+    y = data['price'].values
     min_max_scaler = MinMaxScaler().fit(X)
     X = min_max_scaler.fit_transform(X.astype(float))
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2,random_state=42)
     params = {
-        "n_estimators": 400,
+        "n_estimators": 100,
         "max_depth": 5,
         "min_samples_split": 5,
-        "learning_rate": 0.1,
+        "learning_rate": 0.2,
         "loss": "squared_error",
     }
     clf = ensemble.GradientBoostingRegressor(**params)
@@ -41,25 +41,8 @@ if __name__ == '__main__':
     for i, y_pred in enumerate(clf.staged_predict(X_test)):
         test_score[i] = clf.loss_(y_test, y_pred)
 
-    # fig = plt.figure(figsize=(6, 6))
-    # plt.subplot(1, 1, 1)
-    # plt.title("Deviance")
-    # plt.plot(
-    #     np.arange(params["n_estimators"]) + 1,
-    #     clf.train_score_,
-    #     "b-",
-    #     label="Training Set Deviance",
-    # )
-    # plt.plot(
-    #     np.arange(params["n_estimators"]) + 1, test_score, "r-", label="Test Set Deviance"
-    # )
-    # plt.legend(loc="upper right")
-    # plt.xlabel("Boosting Iterations")
-    # plt.ylabel("Deviance")
-    # fig.tight_layout()
-    # plt.show()
-    # RandomForestRegressor model
-    model = RandomForestRegressor(n_estimators=300)
+
+    model = RandomForestRegressor()
     model.fit(X_train, y_train)
     y_pr = model.predict(X_test)
     print("RandomForestRegressor: ", r2_score(y_test, y_pr))
