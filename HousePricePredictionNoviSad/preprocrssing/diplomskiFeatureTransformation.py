@@ -6,7 +6,7 @@ from sklearn.preprocessing import MinMaxScaler
 pd.pandas.set_option('display.max_rows', None)
 pd.pandas.set_option('display.max_columns', None)
 if __name__ == '__main__':
-    df = pd.read_csv('../data/diplomskiCleanedDatawithStateCorrupted.csv')
+    df = pd.read_csv('../data/diplomskiCleanedDataWithStateCorrupted.csv')
 
     print(df['state'].value_counts())
     top_values = df['infrastructure'].value_counts().nlargest(10).index.tolist()

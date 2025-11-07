@@ -25,4 +25,4 @@ if __name__ == '__main__':
 
 
 
-    # df.to_csv('diplomskiCleanedDataWithStateCorrupted.csv', index=False)
+    df.to_csv('diplomskiCleanedDataWithStateCorrupted.csv', index=False)

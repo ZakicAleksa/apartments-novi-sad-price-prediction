@@ -49,7 +49,7 @@ if __name__ == '__main__':
 
 
     dictionary = {}
-    with open("../scraping/najnoviji.json", "r", encoding='utf-8') as infile:
+    with open("../scraping/scraped-flats.json", "r", encoding='utf-8') as infile:
         dictionary = json.load(infile)
 
 

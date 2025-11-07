@@ -65,7 +65,7 @@ if __name__ == '__main__':
     gb.fit(x_train, y_train)
 
     y_pred = gb.predict(x_test)
-    pickle.dump(gb, open(r"C:\Users\aleksa\Desktop\fax\ORI\OriProject\HousePricePredictionNoviSad\diplomski\models\model.pkl","wb"))
+    pickle.dump(gb, open(r"/HousePricePredictionNoviSad/diplomski/models/model.pkl", "wb"))
 
     print("Gradinet boosting regressor R2: ", r2_score(y_test, y_pred))
     print('MAE:', mean_absolute_error(y_test, y_pred))

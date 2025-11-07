@@ -18,7 +18,7 @@ if __name__ == '__main__':
     from sklearn.ensemble import RandomForestRegressor
     from sklearn.metrics import r2_score, mean_absolute_error
 
-    data = pd.read_csv('../data/numeric_data_corrupted.csv')
+    data = pd.read_csv('../data/numeric_data.csv')
 
     Z = data.drop('price', axis=1)
     X = data.drop('price', axis=1).values

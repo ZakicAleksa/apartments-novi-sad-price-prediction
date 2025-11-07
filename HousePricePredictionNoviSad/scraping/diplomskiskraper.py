@@ -1,16 +1,12 @@
 import copy
 
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.keys import Keys
+
 import csv
 import time
 import json
 from selenium.common.exceptions import NoSuchElementException
-from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 
 PATH = 'C:/Users/aleksa/Downloads/chromedriver.exe'
@@ -33,9 +29,6 @@ if __name__ == '__main__':
                 address_container = driver.find_element(By.TAG_NAME, "app-place-info")
                 address = address_container.find_element(By.TAG_NAME,"strong")
                 location = address_container.find_element(By.TAG_NAME, "span")
-                # lc = driver.find_element(By.CLASS_NAME, "block")
-                # lc1 = lc.find_element(By.CLASS_NAME, "flex")
-                # lc2 = lc1.find_element(By.TAG_NAME, "span")
                 #print(lc1.text)
                 time.sleep(1)
                 dictionary['Adresa:'] = address.text
@@ -46,10 +39,8 @@ if __name__ == '__main__':
                 new_dic = copy.deepcopy(dictionary)
                 print(new_dic)
                 table_data.append(new_dic)
-            # with open('../resources/final3.json', 'w', encoding='utf-8') as f:
-            #     json.dump(table_data, f, sort_keys=True)
             except NoSuchElementException:
                 time.sleep(2)
-    with open('najnoviji.json', 'w', encoding='utf-8') as f:
+    with open('scraped-flats.json', 'w', encoding='utf-8') as f:
         json.dump(table_data, f, sort_keys=True)
     driver.close()
