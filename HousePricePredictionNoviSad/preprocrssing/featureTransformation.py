@@ -11,12 +11,11 @@ if __name__ == '__main__':
     print(df['state'].value_counts())
     top_values = df['infrastructure'].value_counts().nlargest(10).index.tolist()
 
-    # Step 2: Create a new DataFrame with one-hot encoding for the top values
     one_hot_encoded_df = pd.get_dummies(
         df['infrastructure'].apply(lambda x: x if x in top_values else None))
     df.drop(['infrastructure'], axis=1, inplace=True)
 
-    # Step 3: Concatenate the new DataFrame with the original dataset
+
     df = pd.concat([df, one_hot_encoded_df], axis=1)
 
 
