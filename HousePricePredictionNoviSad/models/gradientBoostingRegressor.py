@@ -7,11 +7,11 @@ import numpy as np
 import pickle
 
 if __name__ == '__main__':
-    data = pd.read_csv('../data/numeric_data_corrupted.csv')
+    data = pd.read_csv('../data/enkodovanSet.csv')
 
-    Z = data.drop('price', axis=1)
-    X = data.drop('price', axis=1).values
-    y = data['price'].values
+    Z = data.drop('cena', axis=1)
+    X = data.drop('cena', axis=1).values
+    y = data['cena'].values
 
     x_train, x_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
@@ -65,7 +65,7 @@ if __name__ == '__main__':
     gb.fit(x_train, y_train)
 
     y_pred = gb.predict(x_test)
-    pickle.dump(gb, open(r"/HousePricePredictionNoviSad/diplomski/models/model.pkl", "wb"))
+    pickle.dump(gb, open("../models/model.pkl", "wb"))
 
     print("Gradinet boosting regressor R2: ", r2_score(y_test, y_pred))
     print('MAE:', mean_absolute_error(y_test, y_pred))

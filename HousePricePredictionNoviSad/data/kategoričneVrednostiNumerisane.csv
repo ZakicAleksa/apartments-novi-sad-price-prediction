@@ -1,4 +1,4 @@
-,price,location,surface,rooms,heating,furniture,type,elevator,garage,infrastructure,floor,yearOfBuild,state
+,cena,lokacija,površina,broj soba,grejanje,nameštenost,tip,lift,garaža,infrastruktura,sprat,godina izgradnje,stanje
 0,130000,Sajmište,63,2.0,centralno grejanje,2,,,0,terasa,1,,uobičajeno stanje
 1,93700,Bulevar Oslobođenja,52,2.0,centralno grejanje,2,Stan u zgradi,ima lift (1),0,terasa,1,1971.0,uobičajeno stanje
 2,180000,Stari Grad,71,3.0,centralno grejanje,0,Stan u zgradi,ima lift (1),0,terasa,1,1971.0,renovirano
@@ -40,7 +40,7 @@
 38,92700,Bulevar Evrope,51,3.0,grejanje na gas,2,Stan u zgradi,ima lift (1),0,terasa,4,2020.0,novo
 39,140390,Novo Naselje,94,4.0,centralno grejanje,0,Dupleks,ima lift (1),0,terasa,5,2020.0,novo
 40,122460,Novo Naselje,82,3.0,centralno grejanje,0,Dupleks,ima lift (1),0,terasa,5,2020.0,novo
-41,87550,rare_location,38,2.0,centralno grejanje,2,Stan u zgradi,ima lift (1),0,terasa,5,2020.0,renovirano
+41,87550,retka_lokacija,38,2.0,centralno grejanje,2,Stan u zgradi,ima lift (1),0,terasa,5,2020.0,renovirano
 42,126855,Adice,91,4.0,podno grejanje,0,Stan u zgradi,ima lift (1),0,terasa,1,2020.0,u izgradnji
 43,41200,Sajmište,24,1.0,centralno grejanje,2,Stan u zgradi,ima lift (1),0,terasa,7,2020.0,renovirano
 44,73000,Stari Grad,23,1.0,centralno grejanje,2,Stan u zgradi,ima lift (1),0,terasa,3,2020.0,novo
@@ -48,7 +48,7 @@
 46,126690,Grbavica,43,2.0,centralno grejanje,2,Stan u zgradi,ima lift (1),0,terasa,1,2020.0,uobičajeno stanje
 47,195000,Stari Grad,78,3.0,centralno grejanje,2,Stan u zgradi,ima lift (1),0,terasa,1,2000.0,uobičajeno stanje
 48,162200,Kej,63,3.0,centralno grejanje,2,Stan u zgradi,ima lift (1),0,terasa,3,1975.0,uobičajeno stanje
-49,131430,rare_location,44,2.0,centralno grejanje,2,Stan u zgradi,ima lift (1),0,terasa,2,1975.0,u izgradnji
+49,131430,retka_lokacija,44,2.0,centralno grejanje,2,Stan u zgradi,ima lift (1),0,terasa,2,1975.0,u izgradnji
 50,118450,Železnička stanica,56,3.0,centralno grejanje,2,Stan u zgradi,ima lift (1),0,terasa,5,1970.0,uobičajeno stanje
 51,123600,Adice,116,4.0,centralno grejanje,2,Stan u zgradi,ima lift (1),0,terasa,1,2017.0,u izgradnji
 52,144200,Liman 4,59,3.0,centralno grejanje,2,Stan u zgradi,ima lift (1),0,terasa,9,1986.0,uobičajeno stanje
@@ -250,7 +250,7 @@
 248,55000,Železnička stanica,32,1.0,centralno grejanje,0,Stan u zgradi,ima lift (1),1,terasa,5,2020.0,uobičajeno stanje
 249,83500,Telep,43,2.0,grejanje na gas,0,Stan u zgradi,ima lift (1),1,terasa,1,2020.0,novo
 250,82390,Petrovaradin,41,2.0,grejanje na gas,0,Stan u zgradi,ima lift (1),1,"prilaz za invalide, terasa",3,2020.0,novo
-251,81970,rare_location,56,3.0,grejanje na gas,0,Stan u zgradi,ima lift (1),1,terasa,2,2020.0,u izgradnji
+251,81970,retka_lokacija,56,3.0,grejanje na gas,0,Stan u zgradi,ima lift (1),1,terasa,2,2020.0,u izgradnji
 252,32960,Veternik,16,1.0,grejanje na struju,0,Stan u zgradi,ima lift (1),1,terasa,1,2020.0,novo
 253,68290,Adice,39,2.0,grejanje na gas,0,Stan u zgradi,ima lift (1),1,terasa,1,2020.0,u izgradnji
 254,68000,Nova Detelinara,25,1.0,centralno grejanje,2,Stan u zgradi,ima lift (1),1,terasa,4,2020.0,u izgradnji
@@ -533,11 +533,11 @@
 531,108000,Adice,60,3.0,centralno grejanje,0,Stan u zgradi,ima lift (1),2,terasa,1,2023.0,u izgradnji
 532,148500,Telep,70,3.0,grejanje na gas,0,Stan u zgradi,ima lift (1),2,terasa,1,2023.0,novo
 533,94950,Podbara,40,2.0,grejanje na gas,0,Stan u zgradi,ima lift (1),2,terasa,1,2023.0,u izgradnji
-534,128750,rare_location,66,3.0,grejanje na gas,0,Stan u zgradi,ima lift (1),2,terasa,1,2023.0,novo
+534,128750,retka_lokacija,66,3.0,grejanje na gas,0,Stan u zgradi,ima lift (1),2,terasa,1,2023.0,novo
 535,227000,Bulevar Oslobođenja,110,4.0,centralno grejanje,2,Stan u zgradi,ima lift (1),1,"alarm, terasa",2,2023.0,uobičajeno stanje
 536,72100,Socijalno,24,1.0,centralno grejanje,2,Stan u zgradi,ima lift (1),1,"alarm, terasa",1,2004.0,uobičajeno stanje
 537,129270,Novo Naselje,58,3.0,centralno grejanje,2,Stan u zgradi,ima lift (1),1,terasa,1,2010.0,uobičajeno stanje
-538,128750,rare_location,66,3.0,grejanje na gas,2,Stan u zgradi,ima lift (1),1,terasa,1,2010.0,uobičajeno stanje
+538,128750,retka_lokacija,66,3.0,grejanje na gas,2,Stan u zgradi,ima lift (1),1,terasa,1,2010.0,uobičajeno stanje
 539,216300,Podbara,74,3.0,centralno grejanje,2,Stan u zgradi,ima lift (1),1,terasa,3,2010.0,renovirano
 540,133900,Grbavica,53,2.0,centralno grejanje,2,Stan u zgradi,ima lift (1),1,terasa,1,2010.0,renovirano
 541,98660,Telep,39,2.0,grejanje na gas,2,Stan u zgradi,ima lift (1),1,"tavan, terasa",3,2010.0,novo
@@ -548,7 +548,7 @@
 546,163150,Grbavica,66,3.0,centralno grejanje,0,Stan u zgradi,ima lift (1),1,terasa,2,2010.0,novo
 547,89610,Podbara,42,2.0,centralno grejanje,0,Stan u zgradi,ima lift (1),1,terasa,4,2010.0,novo
 548,78000,Novo Naselje,41,1.0,centralno grejanje,0,Stan u zgradi,ima lift (1),1,terasa,4,2002.0,uobičajeno stanje
-549,128750,rare_location,66,3.0,grejanje na gas,0,Stan u zgradi,ima lift (1),1,terasa,1,2002.0,uobičajeno stanje
+549,128750,retka_lokacija,66,3.0,grejanje na gas,0,Stan u zgradi,ima lift (1),1,terasa,1,2002.0,uobičajeno stanje
 550,114950,Telep,47,2.0,etažno grejanje,0,Stan u zgradi,ima lift (1),1,terasa,1,2002.0,u izgradnji
 551,140200,Telep,57,3.0,etažno grejanje,0,Stan u zgradi,ima lift (1),1,terasa,1,2002.0,u izgradnji
 552,155800,Telep,65,3.0,etažno grejanje,0,Stan u zgradi,ima lift (1),1,terasa,1,2002.0,u izgradnji
@@ -643,7 +643,7 @@
 641,77250,Železnička stanica,42,2.0,centralno grejanje,0,Stan u zgradi,ima lift (1),1,terasa,5,2020.0,novo
 642,123600,Novo Naselje,62,3.0,centralno grejanje,2,Stan u zgradi,ima lift (1),1,terasa,1,2020.0,uobičajeno stanje
 643,146800,Nova Detelinara,57,3.0,centralno grejanje,1,Stan u zgradi,ima lift (1),1,terasa,1,2020.0,uobičajeno stanje
-644,125000,rare_location,51,2.0,centralno grejanje,2,Stan u zgradi,ima lift (1),1,"prilaz za invalide, dvorište, terasa",5,2020.0,uobičajeno stanje
+644,125000,retka_lokacija,51,2.0,centralno grejanje,2,Stan u zgradi,ima lift (1),1,"prilaz za invalide, dvorište, terasa",5,2020.0,uobičajeno stanje
 645,185400,Sajmište,65,3.0,centralno grejanje,2,Stan u zgradi,ima lift (1),1,"prilaz za invalide, dvorište, terasa",2,2020.0,uobičajeno stanje
 646,121000,Bulevar Oslobođenja,57,3.0,centralno grejanje,2,Stan u zgradi,ima lift (1),1,terasa,4,2020.0,uobičajeno stanje
 647,123800,Veternik,89,4.0,centralno grejanje,0,Stan u zgradi,ima lift (1),1,terasa,2,2020.0,uobičajeno stanje
@@ -766,7 +766,7 @@
 764,195000,Bulevar Patrijarha Pavla,85,3.0,grejanje na gas,1,Stan u zgradi,ima lift (1),1,terase (2),3,2021.0,luksuzno
 765,82000,Novo Naselje,39,2.0,centralno grejanje,1,Stan u zgradi,ima lift (1),1,terasa,3,2021.0,luksuzno
 766,172000,Stari Grad,85,4.0,centralno grejanje,0,Stan u zgradi,ima lift (1),1,terasa,2,2021.0,renovirano
-767,200000,rare_location,110,4.0,centralno grejanje,0,Stan u zgradi,ima lift (1),1,podrum,5,2020.0,luksuzno
+767,200000,retka_lokacija,110,4.0,centralno grejanje,0,Stan u zgradi,ima lift (1),1,podrum,5,2020.0,luksuzno
 768,298980,Telep,151,4.0,grejanje na gas,0,Stan u zgradi,ima lift (1),1,terase (2),1,2020.0,novo
 769,159000,Socijalno,58,2.0,centralno grejanje,2,Stan u zgradi,ima lift (1),1,terasa,3,2010.0,novo
 770,165000,Bulevar Evrope,68,3.0,grejanje na gas,2,Stan u zgradi,ima lift (2),1,terasa,2,2010.0,novo
@@ -1016,7 +1016,7 @@
 1014,145230,Podbara,47,3.0,centralno grejanje,2,Stan u zgradi,ima lift (1),1,lođa,2,2018.0,renovirano
 1015,216300,Grbavica,75,3.0,centralno grejanje,2,Stan u zgradi,ima lift (1),1,terasa,5,2002.0,renovirano
 1016,695250,Bulevar Oslobođenja,204,7.0,podno grejanje,2,Stan u zgradi,ima lift (1),1,"podrum, terase (3+)",2,2021.0,novo
-1017,99999,rare_location,52,2.0,centralno grejanje,0,Stan u zgradi,ima lift (1),1,"podrum, terase (3+)",1,2021.0,potrebno renoviranje
+1017,99999,retka_lokacija,52,2.0,centralno grejanje,0,Stan u zgradi,ima lift (1),1,"podrum, terase (3+)",1,2021.0,potrebno renoviranje
 1018,37080,Veternik,19,1.0,centralno grejanje,0,Stan u zgradi,ima lift (1),1,"podrum, terase (3+)",1,2021.0,u izgradnji
 1019,309000,Telep,139,5.0,centralno grejanje,0,Stan u zgradi,ima lift (1),1,"podrum, terase (3+)",4,2021.0,u izgradnji
 1020,131900,Nova Detelinara,47,2.0,centralno grejanje,1,Stan u zgradi,ima lift (1),1,terasa,3,2021.0,novo
@@ -1118,12 +1118,12 @@
 1116,82000,Adice,49,2.0,grejanje na gas,0,Stan u zgradi,ima lift (1),1,terasa,2,2009.0,novo
 1117,79220,Adice,46,3.0,grejanje na gas,0,Stan u zgradi,ima lift (1),1,terasa,1,2009.0,novo
 1118,94020,Adice,58,4.0,grejanje na gas,0,Stan u zgradi,ima lift (1),1,terasa,1,2009.0,novo
-1119,82400,rare_location,45,2.0,grejanje na gas,0,Stan u zgradi,ima lift (1),1,terasa,1,2020.0,novo
+1119,82400,retka_lokacija,45,2.0,grejanje na gas,0,Stan u zgradi,ima lift (1),1,terasa,1,2020.0,novo
 1120,178400,Sajmište,63,3.0,grejanje na gas,0,Stan u zgradi,ima lift (1),1,terasa,1,2020.0,novo
 1121,206000,Nova Detelinara,94,4.0,centralno grejanje,0,Stan u zgradi,ima lift (1),1,terase (2),3,2020.0,novo
 1122,229000,Kej,99,4.0,centralno grejanje,0,Stan u zgradi,ima lift (1),1,terase (2),3,2020.0,novo
 1123,154500,Novo Naselje,81,4.0,centralno grejanje,0,Stan u zgradi,ima lift (1),1,terasa,5,2011.0,uobičajeno stanje
-1124,82400,rare_location,45,2.0,centralno grejanje,0,Stan u zgradi,ima lift (1),1,terasa,1,2011.0,u izgradnji
+1124,82400,retka_lokacija,45,2.0,centralno grejanje,0,Stan u zgradi,ima lift (1),1,terasa,1,2011.0,u izgradnji
 1125,84500,Novo Naselje,46,2.0,centralno grejanje,0,Stan u zgradi,ima lift (1),1,terasa,4,1998.0,uobičajeno stanje
 1126,76220,Novo Naselje,34,1.0,centralno grejanje,0,Stan u zgradi,ima lift (1),1,terasa,5,2003.0,uobičajeno stanje
 1127,207940,Stari Grad,49,2.0,centralno grejanje,1,Stan u zgradi,ima lift (1),1,terasa,4,2003.0,luksuzno
@@ -1164,7 +1164,7 @@
 1162,138230,Bulevar Oslobođenja,61,3.0,centralno grejanje,0,Stan u zgradi,ima lift (1),1,terasa,14,1970.0,potrebno renoviranje
 1163,123600,Telep,57,3.0,grejanje na gas,0,Stan u zgradi,ima lift (1),1,terasa,1,2021.0,novo
 1164,143100,Podbara,72,3.0,centralno grejanje,0,Stan u zgradi,ima lift (1),1,"podrum, terasa",4,2021.0,renovirano
-1165,107000,rare_location,69,3.0,centralno grejanje,1,Stan u zgradi,ima lift (1),1,terasa,2,2021.0,novo
+1165,107000,retka_lokacija,69,3.0,centralno grejanje,1,Stan u zgradi,ima lift (1),1,terasa,2,2021.0,novo
 1166,111240,Novo Naselje,70,3.0,centralno grejanje,0,Stan u zgradi,ima lift (1),1,terasa,4,2021.0,uobičajeno stanje
 1167,147500,Telep,62,3.0,grejanje na gas,0,Stan u zgradi,ima lift (1),1,terasa,1,2023.0,novo
 1168,75600,Telep,29,1.0,grejanje na gas,0,Stan u zgradi,ima lift (1),1,terasa,1,2023.0,novo
@@ -1438,7 +1438,7 @@
 1436,113000,Grbavica,38,2.0,centralno grejanje,0,Stan u zgradi,ima lift (1),1,terasa,3,2016.0,novo
 1437,92400,Stari Grad,42,2.0,centralno grejanje,0,Stan u zgradi,ima lift (1),1,"podrum, terasa",1,2008.0,novo
 1438,95275,Bulevar Oslobođenja,42,2.0,centralno grejanje,0,Stan u zgradi,ima lift (1),1,terasa,5,2022.0,uobičajeno stanje
-1439,69500,rare_location,96,4.0,grejanje na gas,0,Stan u zgradi,ima lift (1),1,"podrum, terasa, lođa",1,2022.0,uobičajeno stanje
+1439,69500,retka_lokacija,96,4.0,grejanje na gas,0,Stan u zgradi,ima lift (1),1,"podrum, terasa, lođa",1,2022.0,uobičajeno stanje
 1440,350200,Kej,86,3.0,centralno grejanje,0,Stan u zgradi,ima lift (1),1,terase (2),4,2022.0,uobičajeno stanje
 1441,125500,Socijalno,46,2.0,centralno grejanje,2,Stan u zgradi,ima lift (1),1,terasa,1,2009.0,novo
 1442,128750,Detelinara,58,3.0,centralno grejanje,2,Stan u zgradi,ima lift (1),1,terasa,1,1967.0,uobičajeno stanje
@@ -1516,7 +1516,7 @@
 1514,266150,Salajka,129,5.0,centralno grejanje,0,Stan u zgradi,ima lift (1),1,terasa,4,2005.0,u izgradnji
 1515,166900,Liman 4,81,3.0,centralno grejanje,2,Stan u zgradi,ima lift (1),1,terase (2),4,2005.0,renovirano
 1516,97850,Socijalno,39,2.0,centralno grejanje,2,Stan u zgradi,ima lift (1),1,terase (2),1,2005.0,renovirano
-1517,92700,rare_location,52,2.0,centralno grejanje,2,Stan u zgradi,ima lift (1),1,terasa,3,2005.0,renovirano
+1517,92700,retka_lokacija,52,2.0,centralno grejanje,2,Stan u zgradi,ima lift (1),1,terasa,3,2005.0,renovirano
 1518,247200,Nova Detelinara,99,3.0,centralno grejanje,2,Stan u zgradi,ima lift (1),1,terasa,3,2015.0,uobičajeno stanje
 1519,176150,Stari Grad,45,2.0,centralno grejanje,2,Stan u zgradi,ima lift (1),1,terasa,1,2015.0,u izgradnji
 1520,164800,Grbavica,68,3.0,centralno grejanje,0,Stan u zgradi,ima lift (1),1,terasa,5,2015.0,novo
@@ -1715,7 +1715,7 @@
 1713,59370,Veternik,41,2.0,grejanje na gas,0,Stan u zgradi,ima lift (1),1,"prilaz za invalide, dvorište, podrum, terasa",1,2010.0,u izgradnji
 1714,86000,Nova Detelinara,38,1.0,centralno grejanje,0,Stan u zgradi,ima lift (1),1,"prilaz za invalide, dvorište, podrum, terasa",2,1965.0,u izgradnji
 1715,340000,Bulevar Oslobođenja,113,4.0,centralno grejanje,1,Stan u zgradi,ima lift (2),1,"alarm, terasa, lođa",1,1965.0,u izgradnji
-1716,206000,rare_location,89,4.0,centralno grejanje,1,Stan u zgradi,ima lift (1),1,"alarm, terasa, lođa",5,2020.0,uobičajeno stanje
+1716,206000,retka_lokacija,89,4.0,centralno grejanje,1,Stan u zgradi,ima lift (1),1,"alarm, terasa, lođa",5,2020.0,uobičajeno stanje
 1717,99500,Grbavica,37,2.0,centralno grejanje,1,Stan u zgradi,ima lift (1),1,terasa,3,2020.0,uobičajeno stanje
 1718,109000,Grbavica,48,2.0,grejanje na gas,1,Stan u zgradi,ima lift (1),1,terasa,1,2020.0,uobičajeno stanje
 1719,200850,Stari Grad,78,4.0,podno grejanje,2,Dupleks,ima lift (1),1,terasa,6,2020.0,novo
@@ -1817,7 +1817,7 @@
 1815,236950,Liman 3,107,3.0,centralno grejanje,0,Stan u zgradi,ima lift (1),1,terasa,4,2019.0,novo
 1816,87140,Petrovaradin,47,2.0,grejanje na gas,0,Stan u zgradi,ima lift (1),1,terasa,1,2023.0,novo
 1817,123600,Podbara,46,3.0,centralno grejanje,0,Stan u zgradi,ima lift (1),1,terasa,4,2023.0,novo
-1818,70970,rare_location,24,1.0,centralno grejanje,0,Stan u zgradi,ima lift (1),1,terasa,1,2023.0,uobičajeno stanje
+1818,70970,retka_lokacija,24,1.0,centralno grejanje,0,Stan u zgradi,ima lift (1),1,terasa,1,2023.0,uobičajeno stanje
 1819,72100,Bulevar Oslobođenja,27,1.0,centralno grejanje,0,Stan u zgradi,ima lift (1),1,terasa,1,2023.0,uobičajeno stanje
 1820,118450,Nova Detelinara,65,3.0,centralno grejanje,0,Stan u zgradi,ima lift (1),1,terasa,4,2003.0,uobičajeno stanje
 1821,77500,Petrovaradin,50,2.0,centralno grejanje,0,Stan u zgradi,ima lift (1),1,terasa,5,1985.0,uobičajeno stanje
