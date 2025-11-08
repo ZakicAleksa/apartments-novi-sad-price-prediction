@@ -143,7 +143,7 @@ if __name__ == '__main__':
             if region.lower() in address.lower() or region.lower() in location.lower():
                 location_list.append(region)
                 return
-        location_list.append("rare_location")
+        location_list.append("retka_lokacija")
 
 
     price = []
@@ -189,8 +189,8 @@ if __name__ == '__main__':
         print(i)
     data_tuples = list(zip(price[:], location[:], surface[:], rooms[:], heating[:],
                             furniture[:],  flatType[:], elevator[:] ,garage[:], infrastructure[:], floor[:], yearOfBuild[:],state[:]))
-    temp_df = pd.DataFrame(data_tuples, columns=['price','location', 'surface', 'rooms',
-                                                 'heating', 'furniture',
-                                                 'type','elevator','garage','infrastructure','floor','yearOfBuild','state'])
-    temp_df.to_csv('diplomskiSaStanjemSet.csv', encoding='utf-8')
+    temp_df = pd.DataFrame(data_tuples, columns=['cena','lokacija', 'površina', 'broj soba',
+                                                 'grejanje', 'nameštenost',
+                                                 'tip','lift','garaža','infrastruktura','sprat','godina izgradnje','stanje'])
+    temp_df.to_csv('../data/kategoričneVrednostiNumerisane.csv', encoding='utf-8')
     print(temp_df)

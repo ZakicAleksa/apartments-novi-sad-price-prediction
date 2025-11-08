@@ -6,14 +6,14 @@ from sklearn.preprocessing import MinMaxScaler
 pd.pandas.set_option('display.max_rows', None)
 pd.pandas.set_option('display.max_columns', None)
 if __name__ == '__main__':
-    df = pd.read_csv('../data/diplomskiCleanedDataWithStateCorrupted.csv')
+    df = pd.read_csv('../data/očišćenSet.csv')
 
-    print(df['state'].value_counts())
-    top_values = df['infrastructure'].value_counts().nlargest(10).index.tolist()
+    print(df['stanje'].value_counts())
+    top_values = df['infrastruktura'].value_counts().nlargest(10).index.tolist()
 
     one_hot_encoded_df = pd.get_dummies(
-        df['infrastructure'].apply(lambda x: x if x in top_values else None))
-    df.drop(['infrastructure'], axis=1, inplace=True)
+        df['infrastruktura'].apply(lambda x: x if x in top_values else None))
+    df.drop(['infrastruktura'], axis=1, inplace=True)
 
 
     df = pd.concat([df, one_hot_encoded_df], axis=1)
@@ -23,9 +23,9 @@ if __name__ == '__main__':
     categorical_features = [feature for feature in df.columns if df[feature].dtype == 'object']
 
     for feature in categorical_features:
-        temp = df.groupby(feature)['price'].count() / len(df)
+        temp = df.groupby(feature)['cena'].count() / len(df)
         temp_df = temp[temp > 0.002].index
-        rare_var_label = f'Rare_var_{feature}'  # Unique label for each feature
+        rare_var_label = f'retka_vrednost_{feature}'  # Unique label for each feature
         df[feature] = np.where(df[feature].isin(temp_df), df[feature], rare_var_label)
 
     def category_onehot_multcols(multcolumns):
@@ -46,10 +46,10 @@ if __name__ == '__main__':
     print(data.head())
 
     min_max = MinMaxScaler()
-    selected_columns = ['surface', 'rooms', 'floor', 'yearOfBuild']
+    selected_columns = ['površina', 'broj soba', 'sprat', 'godina izgradnje']
     # data[selected_columns] = min_max.fit_transform(data[selected_columns])
 
-    data.to_csv('numeric_data_corrupted.csv', index=False)
+    data.to_csv('../data/enkodovanSet.csv', index=False)
 
 
 
